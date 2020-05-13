@@ -49,6 +49,21 @@
     </projectile>
   </ThingDef>
   
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ChargeSlingshot</defName>
+    <label>charged slingshot shot</label>
+    <graphicData>
+      <texPath>Things/Weapons/Charge_Shot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+	<flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <speed>64</speed>
+    </projectile>
+  </ThingDef>
+  
     <ThingDef ParentName="BaseBullet">
     <defName>Bullet_WoodenSlingshot</defName>
     <label>slingshot shot</label>
