@@ -1,0 +1,6 @@
+/home/thomas/.local/share/Steam/steamapps/common/RimWorld/Mods/Animal Crossing Villagers/Source/obj/Debug/AnimalCrossingVillagers.csprojAssemblyReference.cache
+/home/thomas/.local/share/Steam/steamapps/common/RimWorld/Mods/Animal Crossing Villagers/Source/obj/Debug/AnimalCrossingVillagers.csproj.CoreCompileInputs.cache
+/home/thomas/.local/share/Steam/steamapps/common/RimWorld/Mods/Animal Crossing Villagers/Common/Assemblies/AnimalCrossingVillagers.dll
+/home/thomas/.local/share/Steam/steamapps/common/RimWorld/Mods/Animal Crossing Villagers/Common/Assemblies/AnimalCrossingVillagers.pdb
+/home/thomas/.local/share/Steam/steamapps/common/RimWorld/Mods/Animal Crossing Villagers/Source/obj/Debug/AnimalCrossingVillagers.dll
+/home/thomas/.local/share/Steam/steamapps/common/RimWorld/Mods/Animal Crossing Villagers/Source/obj/Debug/AnimalCrossingVillagers.pdb
