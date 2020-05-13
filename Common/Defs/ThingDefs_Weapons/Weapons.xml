@@ -97,7 +97,7 @@
   <ThingDef ParentName="BaseVillagerMakeableGun">
     <defName>Gun_GoldenSlingshot</defName>
     <label>golden slingshot</label>
-    <description>A rare slingshot which fires three pellets with a single draw.</description>
+    <description>A rare slingshot which fires three pellets in a single draw. Only those who prove their mastery with a simple pellet slingshot are rewarded with gold.</description>
     <graphicData>
       <texPath>Things/Weapons/Slingshot_Golden</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -108,7 +108,7 @@
       <Gold>10</Gold>
     </costList>
     <statBases>
-      <WorkToMake>7000</WorkToMake>
+      <WorkToMake>20000</WorkToMake>
       <Mass>2.0</Mass>
       <AccuracyTouch>0.40</AccuracyTouch>
       <AccuracyShort>0.48</AccuracyShort>
@@ -153,9 +153,68 @@
   </ThingDef>
   
   <ThingDef ParentName="BaseVillagerMakeableGun">
+    <defName>Gun_ChargeSlingshot</defName>
+    <label>charge slingshot</label>
+    <description>A high-tech slingshot which charges each shot with unstable energy. Released on impact, the charged energy greatly increases the damage done.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Slingshot_Charge</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Small</soundInteract>
+    <costList>
+      <Plasteel>30</Plasteel>
+      <Gold>10</Gold>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>1.5</Mass>
+      <AccuracyTouch>0.45</AccuracyTouch>
+      <AccuracyShort>0.55</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>ACSpacer</li>
+    </weaponTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>TableMiniDIY</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>ACVillagerChargedShot</researchPrerequisite>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ChargeSlingshot</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>22</range>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>Bow_Small</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseVillagerMakeableGun">
     <defName>Gun_WoodenSlingshot</defName>
     <label>wooden slingshot</label>
-    <description>A slingshot originally designed for shooting small airborne targets.</description>
+    <description>A slingshot originally designed for shooting small airborne targets, it has been repurposed as a weapon.</description>
     <graphicData>
       <texPath>Things/Weapons/Slingshot_Wooden</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -165,7 +224,7 @@
       <WoodLog>40</WoodLog>
     </costList>
     <statBases>
-      <WorkToMake>2000</WorkToMake>
+      <WorkToMake>12000</WorkToMake>
       <Mass>1.0</Mass>
       <AccuracyTouch>0.65</AccuracyTouch>
       <AccuracyShort>0.75</AccuracyShort>
@@ -210,7 +269,7 @@
   <ThingDef ParentName="BaseVillagerMakeableGun">
     <defName>Gun_SteelSlingshot</defName>
     <label>steel slingshot</label>
-    <description>A slingshot originally designed for shooting small airborne targets.</description>
+    <description>A slingshot originally designed for shooting small airborne targets, it has been repurposed as a weapon.</description>
     <graphicData>
       <texPath>Things/Weapons/Slingshot_Steel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -220,7 +279,7 @@
       <WoodLog>40</WoodLog>
     </costList>
     <statBases>
-      <WorkToMake>2000</WorkToMake>
+      <WorkToMake>12000</WorkToMake>
       <Mass>1.2</Mass>
       <AccuracyTouch>0.65</AccuracyTouch>
       <AccuracyShort>0.75</AccuracyShort>
@@ -260,6 +319,158 @@
         <cooldownTime>1.8</cooldownTime>
       </li>
     </tools>
+  </ThingDef>
+  
+  <!-- Melee Weapons -->
+  
+   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_ACAxe</defName>
+    <label>villager axe</label>
+    <description>An iron axe designed for chopping down trees. It has been repurposed as a weapon.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Axe_Villager</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>ACMelee</li>
+    </weaponTags>
+    <costList>
+    <Steel>30</Steel>
+    <WoodLog>20</WoodLog>
+</costList>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedAngleOffset>0</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>cut</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+		<researchPrerequisite>ACVillagerWeapons</researchPrerequisite>
+		<recipeUsers>
+			<li>TableMiniDIY</li>
+		</recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  
+   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_ACGoldAxe</defName>
+    <label>golden axe</label>
+    <description>A rare axe designed for chopping down trees. Sharper and stronger than a villager axe, it is traditionally given to those who dedicate themselves to caring for their community's appearance and wellbeing.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Axe_Gold</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>ACMelee</li>
+    </weaponTags>
+    <costList>
+    <Gold>30</Gold>
+    <WoodLog>20</WoodLog>
+</costList>
+    <statBases>
+      <WorkToMake>24000</WorkToMake>
+      <Mass>4</Mass>
+    </statBases>
+    <equippedAngleOffset>0</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>cut</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+		<researchPrerequisite>ACVillagerWeapons</researchPrerequisite>
+		<recipeUsers>
+			<li>TableMiniDIY</li>
+		</recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>MeleeWeapon_ACNoEntrySign</defName>
+    <label>No Entry Sign</label>
+    <description>A sign used in public works to signal restricted areas. Used by a mayor's aide in combat, it became one of the oldest improvised weapons used by an animal villager.</description>
+    <graphicData>
+      <texPath>Things/Weapons/No_Entry_Axe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>ACMelee</li>
+    </weaponTags>
+    <costList>
+    <Steel>60</Steel>
+</costList>
+    <statBases>
+      <WorkToMake>16000</WorkToMake>
+      <Mass>3</Mass>
+    </statBases>
+    <equippedAngleOffset>85</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>pole</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>base</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>sign</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+          <li>Cut</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+		<researchPrerequisite>ACVillagerWeapons</researchPrerequisite>
+		<recipeUsers>
+			<li>TableMiniDIY</li>
+		</recipeUsers>
+    </recipeMaker>
   </ThingDef>
 
   
