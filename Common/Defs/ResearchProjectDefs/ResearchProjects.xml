@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--========================= Tier 4: Hi-tech research bench with multi-analyzer ===================================-->
+
+		<ResearchProjectDef>
+		<defName>ACVillagerWeapons</defName>
+		<label>villager weapons</label>
+        <tab>ACVillagerResearch</tab>
+		<description>Unlocks the slingshot and villager axe weapons preferred by animal villagers.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ACVillagerChargedShot</defName>
+		<label>charge slinghsot</label>
+		<description>Allows application of charged projectile technology to slingshots.</description>
+		<baseCost>1500</baseCost>
+		<tab>ACVillagerResearch</tab>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>MultiAnalyzer</li>
+			<li>ChargedShot</li>
+			<li>Fabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

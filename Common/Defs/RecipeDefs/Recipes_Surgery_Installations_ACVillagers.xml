@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--======================= Install natural parts =========================-->
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallWoodenVillagerBeak</defName>
+    <label>install wooden villager beak</label>
+    <description>Install a wooden villager beak.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing a wooden villager beak.</jobString>
+    <workAmount>1500</workAmount>
+    <surgerySuccessChanceFactor>1.40</surgerySuccessChanceFactor>
+    <recipeUsers>
+    </recipeUsers>
+    <skillRequirements>
+      <Medicine>2</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>VillagerBeak</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>WoodenVillagerBeak</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallBionicVillagerBeak</defName>
+    <label>install bionic villager beak</label>
+    <description>Install a bionic villager beak.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing bionic villager beak.</jobString>
+    <workAmount>1500</workAmount>
+    <recipeUsers>
+    </recipeUsers>
+    <skillRequirements>
+      <Medicine>7</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicVillagerBeak</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>BionicVillagerBeak</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>VillagerBeak</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicVillagerBeak</addsHediff>
+  </RecipeDef>
+  
+    <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallClothVillagerTail</defName>
+    <label>install cloth villager tail</label>
+    <description>Install a cloth villager tail.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing a cloth villager tail.</jobString>
+    <workAmount>1500</workAmount>
+    <surgerySuccessChanceFactor>1.40</surgerySuccessChanceFactor>
+    <recipeUsers>
+    </recipeUsers>
+    <skillRequirements>
+      <Medicine>2</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ClothVillagerTail</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>ClothVillagerTail</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>VillagerTail</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ClothVillagerTail</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallBionicVillagerTail</defName>
+    <label>install bionic villager tail</label>
+    <description>Install a bionic villager tail.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing bionic villager tail.</jobString>
+    <workAmount>1500</workAmount>
+    <recipeUsers>
+    </recipeUsers>
+    <skillRequirements>
+      <Medicine>7</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicVillagerTail</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>BionicVillagerBeak</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>VillagerTail</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicVillagerTail</addsHediff>
+  </RecipeDef>
+
+     <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallGoldVillagerHorn</defName>
+    <label>install golden villager horn</label>
+    <description>Install a golden villager horn.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing a golden villager horn.</jobString>
+    <workAmount>1500</workAmount>
+    <surgerySuccessChanceFactor>1.40</surgerySuccessChanceFactor>
+    <recipeUsers>
+    </recipeUsers>
+    <skillRequirements>
+      <Medicine>2</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GoldVillagerHorn</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>GoldVillagerHorn</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>VillagerHorn</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>GoldVillagerHorn</addsHediff>
+    </RecipeDef>
+  
+</Defs>

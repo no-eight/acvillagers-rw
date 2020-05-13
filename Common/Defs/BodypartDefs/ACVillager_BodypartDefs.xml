@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <BodyPartGroupDef>
+        <defName>VillagerBeak</defName>
+        <label>beak</label>
+    </BodyPartGroupDef>
+  
+    <BodyPartDef>
+        <defName>VillagerBeak</defName>
+        <label>beak</label>
+        <hitPoints>15</hitPoints>
+        <frostbiteVulnerability>2</frostbiteVulnerability>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <beautyRelated>true</beautyRelated>
+        <bleedRate>0</bleedRate>
+        <tags>
+        <li>EatingSource</li>
+        <li>TalkingSource</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>VillagerTail</defName>
+        <label>tail</label>
+        <description>An animal villager's tail.</description>
+        <hitPoints>15</hitPoints>
+        <frostbiteVulnerability>2</frostbiteVulnerability>
+        <skinCovered>true</skinCovered>
+        <beautyRelated>true</beautyRelated>
+        <tags>
+            <li>MovingLimbSegment</li>
+        </tags>
+    </BodyPartDef>
+  
+    <BodyPartDef>
+        <defName>VillagerHorn</defName>
+        <label>horn</label>
+        <hitPoints>15</hitPoints>
+        <frostbiteVulnerability>0</frostbiteVulnerability>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <beautyRelated>true</beautyRelated>
+        <bleedRate>0</bleedRate>
+    </BodyPartDef>
+  
+</Defs>

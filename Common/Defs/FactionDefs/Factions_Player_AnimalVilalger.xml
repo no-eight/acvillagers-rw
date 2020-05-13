@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef Abstract="True" Name="AnimalVillagerBase">
+    <colorSpectrum>
+      <li>(0, 0.63, 0.31)</li>
+    </colorSpectrum>
+  </FactionDef>
+  
+  <FactionDef Parent="AnimalVillagerBase">
+    <defName>Player_AnimalVillager</defName>
+    <label>Animal Village</label>
+    <description>A small community of animal villagers that arrived on this world after signing up for Nook Inc's Rimworld Colonization package.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>ACScootVillager</basicMemberKind>
+    <pawnsPlural>villagers</pawnsPlural>
+	<pawnNameMaker>NamerPersonTribal</pawnNameMaker>
+    <techLevel>Industrial</techLevel>
+    <backstoryCategories><li>Offworld</li></backstoryCategories>
+    <factionIconPath>WorldIcon/AnimalVillageMintIcon</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/Expanding/Town</settlementTexturePath>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<geneticVariance>1</geneticVariance>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>Rural</li>
+      <li>Urban</li>
+    </hairTags>
+
+  </FactionDef>
+
+</Defs>

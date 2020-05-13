@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?><Defs>
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+	<defName>Alien_ACMarshal</defName>
+<label>Squirrel Villager</label>
+	<description>A Nook Inc. clone of the smug villager Marshal, an anthropomorphic squirrel who originally lived on Earth in the early 21st century. Though genetically identical to the original his mind was copied imperfectly, creating a personality distinct from other Marshals, sulky.</description>
+	<alienRace>
+	<generalSettings>
+		<factionRelations><li>
+			<factions><li>AnimalVillager</li></factions>
+			<goodwill><min>100</min><max>100</max></goodwill>
+		</li></factionRelations>
+		<maleGenderProbability>1</maleGenderProbability>
+		<forcedRaceTraitEntries>
+			<li><defName>Xenophobia</defName><degree>1</degree><chance>0</chance></li>
+			<li><defName>Xenophobia</defName><degree>-1</degree><chance>0</chance></li>
+		</forcedRaceTraitEntries>
+		<maxDamageForSocialfight>6.0</maxDamageForSocialfight>
+		<alienPartGenerator>
+			<headOffset>(-0.12, -0.23)</headOffset>
+			<aliencrowntypes><li>Average_Normal</li></aliencrowntypes>
+			<alienbodytypes><li>Thin</li></alienbodytypes>
+			<useGenderedHeads>false</useGenderedHeads>
+
+			<bodyAddons><li>
+				<drawSize>0.9</drawSize>
+				<path>SquirrelVillagers/Marshal/Tail/Tail</path>
+				<bodyPart>tail</bodyPart>
+				<inFrontOfBody>false</inFrontOfBody>
+				<useSkinColor>true</useSkinColor>
+				<drawnInBed>false</drawnInBed>
+				<offsets>
+					<south><bodyTypes><Thin>(-0.41, 0.1)</Thin></bodyTypes><crownTypes><Normal_Average>(0,0)</Normal_Average></crownTypes></south>
+					<north><bodyTypes><Thin>(0, 0.42)</Thin></bodyTypes><crownTypes><Normal_Average>(0,0)</Normal_Average></crownTypes></north>
+					<east><bodyTypes><Thin>(-0.1, 0.05)</Thin></bodyTypes><crownTypes><Normal_Average>(0,0)</Normal_Average></crownTypes></east>
+				</offsets>
+			</li><li>
+				<drawSize>0.9</drawSize>
+				<path>SquirrelVillagers/Marshal/Head/Overhead</path>
+				<inFrontOfBody>false</inFrontOfBody>
+				<useSkinColor>true</useSkinColor>
+				<drawnInBed>true</drawnInBed>
+				<offsets>
+					<south><bodyTypes><Thin>(0.0, 0.0)</Thin></bodyTypes><crownTypes><Normal_Average>(0,0)</Normal_Average></crownTypes></south>
+					<north><bodyTypes><Thin>(0.0, 0.67)</Thin></bodyTypes><crownTypes><Normal_Average>(0,0)</Normal_Average></crownTypes></north>
+					<east><bodyTypes><Thin>(0.0, 0.0)</Thin></bodyTypes><crownTypes><Normal_Average>(0,0)</Normal_Average></crownTypes></east>
+				</offsets>
+			</li></bodyAddons>
+
+			<alienskincolorgen Class="ColorGenerator_Options"><options><li><weight>10</weight><only>RGBA(1.0,1.0,1.0,1)</only></li></options></alienskincolorgen>
+			<customDrawSize>(0.9, 0.9)</customDrawSize><customHeadDrawSize>(0.9, 0.9)</customHeadDrawSize><customPortraitDrawSize>(0.9, 0.9)</customPortraitDrawSize><customPortraitHeadDrawSize>(0.9, 0.9)</customPortraitHeadDrawSize>
+		</alienPartGenerator>
+		<humanRecipeImport>true</humanRecipeImport>
+	</generalSettings>
+
+	<graphicPaths><li>
+		<head>SquirrelVillagers/Marshal/Head/</head>
+		<body>SquirrelVillagers/Marshal/Body/</body>
+		<skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
+	</li></graphicPaths>
+	<hairSettings><hasHair>false</hasHair><getsGreyAt>50</getsGreyAt></hairSettings>
+		<relationSettings>
+			<relationChanceModifierChild>0</relationChanceModifierChild><relationChanceModifierParent>0</relationChanceModifierParent><relationChanceModifierSibling>0</relationChanceModifierSibling><relationChanceModifierExLover>0.5</relationChanceModifierExLover><relationChanceModifierExSpouse>0</relationChanceModifierExSpouse><relationChanceModifierLover>0</relationChanceModifierLover><relationChanceModifierSpouse>0</relationChanceModifierSpouse><relationChanceModifierFiance>0</relationChanceModifierFiance>
+		</relationSettings>
+		<raceRestriction>
+			<apparelList></apparelList>
+			<whiteApparelList>
+				<li>Apparel_TribalA</li><li>Apparel_Parka</li><li>Apparel_Duster</li><li>Apparel_Jacket</li><li>Apparel_FlakJacket</li><li>Apparel_VestPlate</li><li>Apparel_PowerArmor</li>
+				<!--<li>Apparel_CowboyHat</li><li>Apparel_BowlerHat</li><li>Apparel_TribalHeaddress</li><li>Apparel_Tuque</li><li>Apparel_WarMask</li><li>Apparel_WarVeil</li><li>Apparel_SimpleHelmet</li><li>Apparel_AdvancedHelmet</li><li>Apparel_PowerArmorHelmet</li><li>Apparel_PsychicFoilHelmet</li>-->
+				<li>Apparel_ShieldBelt</li><li>SmokepopBelt</li>
+				<!-- Glittertech Apparel --><li>Apparel_NanoSuit</li><li>Apparel_Reactive</li><li>Apparel_NanoSkin</li><li>Apparel_NanoSpeed</li><li>Apparel_OCCombatVest</li><li>Apparel_HC1Shield</li><li>Apparel_OCShield</li>
+				<!-- Rimatomics Apparel --><li>Apparel_RadiationSuit</li><li>Apparel_MoppSuitDesert</li><li>Apparel_MoppSuitWoodland</li><li>Apparel_MoppSuitSnow</li>
+				<!-- Advanced Shield Belts Apparel --><li>Apparel_QRShieldBelt</li><li>Apparel_HeavyShieldBelt</li><li>Apparel_RangedShieldBelt</li>
+				<!-- Dubs Kits stuff --><li>MedicineBag</li><li>MedicalKit</li><li>UltraMedKit</li><li>DubsRepairKit</li></whiteApparelList>
+			<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+		</raceRestriction>
+
+	</alienRace>
+	<statBases>
+		<MarketValue>1000</MarketValue><MoveSpeed>4.6</MoveSpeed><Flammability>1.0</Flammability><ComfyTemperatureMin>-10</ComfyTemperatureMin><ComfyTemperatureMax>32</ComfyTemperatureMax><CarryingCapacity>60</CarryingCapacity>
+		<LeatherAmount>20</LeatherAmount>
+		<ResearchSpeed>1.2</ResearchSpeed><MiningSpeed>1.0</MiningSpeed><SocialImpact>1.0</SocialImpact><PlantHarvestYield>1.0</PlantHarvestYield><ConstructionSpeed>1.0</ConstructionSpeed>
+		<ArmorRating_Blunt>0.1</ArmorRating_Blunt><ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+	</statBases>
+	<tools>
+		<li><label>left fist</label>
+			<capacities><li>Blunt</li></capacities>
+			<power>6.0</power>
+			<cooldownTime>2</cooldownTime><linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup><surpriseAttack><extraMeleeDamages><li>
+				<def>Stun</def><amount></amount></li>
+			</extraMeleeDamages></surpriseAttack></li>
+		<li><label>right fist</label>
+			<capacities><li>Blunt</li></capacities>
+			<power>6.0</power>
+			<cooldownTime>2</cooldownTime><linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup><surpriseAttack><extraMeleeDamages><li>
+				<def>Stun</def><amount></amount></li>
+		</extraMeleeDamages></surpriseAttack></li>
+		<li><label>teeth</label>
+			<capacities><li>Bite</li></capacities>
+			<power>8.0</power>
+			<cooldownTime>1.6</cooldownTime><linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup><chanceFactor>0.7</chanceFactor></li>
+		<li><label>head</label>
+			<capacities><li>Blunt</li></capacities>
+			<power></power>
+			<cooldownTime>2</cooldownTime><linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup><ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable><chanceFactor>0.2</chanceFactor></li>
+	</tools>
+
+	<race>
+		<thinkTreeMain>Humanlike</thinkTreeMain>
+		<nameGenerator>NamerPersonACMarshal</nameGenerator>
+		<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant><intelligence>Humanlike</intelligence><makesFootprints>true</makesFootprints><lifeExpectancy>100</lifeExpectancy>
+		<leatherDef>Leather_Light</leatherDef>
+		<nameCategory>HumanStandard</nameCategory><body>ACStandard</body>
+		<baseBodySize>0.75</baseBodySize>
+		<baseHealthScale>1.0</baseHealthScale><foodType>OmnivoreHuman</foodType><baseHungerRate>1.0</baseHungerRate>
+
+		<gestationPeriodDays>32.5</gestationPeriodDays><litterSizeCurve><points><li>(0.5, 1.0)</li></points></litterSizeCurve><lifeStageAges><li><def>HumanlikeBaby</def><minAge>0</minAge></li><li><def>HumanlikeToddler</def><minAge>1.2</minAge></li><li><def>HumanlikeChild</def><minAge>4</minAge></li><li><def>HumanlikeTeenager</def><minAge>10</minAge></li><li><def>HumanlikeAdult</def><minAge>18</minAge></li></lifeStageAges>
+		<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn><soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding><soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+		<ageGenerationCurve><points><li>(14,0)</li><li>(16,100)</li><li>(50,100)</li><li>(60,30)</li><li>(70,18)</li><li>(80,10)</li><li>(90,3)</li><li>(100,0)</li></points></ageGenerationCurve>
+		<hediffGiverSets><li>OrganicStandard</li></hediffGiverSets>
+	</race>
+		<recipes><li>InstallClothVillagerTail</li><li>InstallBionicVillagerTail</li></recipes>
+</AlienRace.ThingDef_AlienRace>
+
+<AlienRace.RaceSettings><defName>MarshalSettings</defName><pawnKindSettings>
+	<startingColonists>
+		<li><pawnKindEntries><li><kindDefs><li>ACMarshalVillager</li></kindDefs><chance>100</chance></li></pawnKindEntries><factionDefs><li>Player_AnimalVillager</li></factionDefs></li>
+		<li><pawnKindEntries><li><kindDefs><li>ACMarshalVillager</li></kindDefs><chance>0.1</chance></li></pawnKindEntries><factionDefs><li>PlayerColony</li></factionDefs></li>
+	</startingColonists>
+	<alienrefugeekinds><li><kindDefs><li>ACMarshalVillager</li></kindDefs><chance>10.0</chance></li></alienrefugeekinds>
+	<alienslavekinds><li><kindDefs><li>ACMarshalVillager</li></kindDefs><chance>10.0</chance></li></alienslavekinds>
+	<alienwandererkinds><li><pawnKindEntries><li><kindDefs><li>ACMarshalVillager</li></kindDefs><chance>5.0</chance></li></pawnKindEntries><factionDefs><li>PlayerColony</li></factionDefs></li></alienwandererkinds>
+</pawnKindSettings></AlienRace.RaceSettings>
+</Defs>

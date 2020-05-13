@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.BackstoryDef>
+
+    <defName>ACJockVillager</defName>
+    <title>Jock Villager</title>
+    <titleShort>Jock</titleShort>
+    <baseDescription>[PAWN_nameDef] spent most of [PAWN_possessive] freetime jogging, swimming, and lifting weights. This obsession with exercise has put [PAWN_objective] in peak physical form.</baseDescription>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+        <li>
+            <defName>SpeedOffset</defName>
+            <degree>2</degree>
+        </li>
+        <li>
+            <defName>Tough</defName>
+            <chance>50</chance>
+        </li>
+    </forcedTraits>
+    <disallowedTraits>
+        <li>
+            <defName>Wimp</defName>
+        </li>
+        <li>
+            <defName>NightOwl</defName>
+        </li>
+    </disallowedTraits>
+    <spawnCategories>
+      <li>ACJockBackstory</li>
+    </spawnCategories>
+	<requiredWorkTags>
+			<li>Violent</li>
+	</requiredWorkTags>
+	</AlienRace.BackstoryDef>
+    
+<AlienRace.BackstoryDef>
+
+    <defName>ACPeppyVillager</defName>
+    <title>Peppy Villager</title>
+    <titleShort>Peppy</titleShort>
+    <baseDescription>[PAWN_nameDef] is friendly and excitable, and spent most of [PAWN_possessive] life dreaming of fame and stardom. This bubbly personality keeps [PAWN_possessive] spirits high and makes others feel at ease with [PAWN_objective] in conversation.</baseDescription>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>6</amount>
+      </li>
+	  <li>
+        <defName>Artistic</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ACPeppyBackstory</li>
+    </spawnCategories>
+		<requiredWorkTags>
+			<li>Social</li>
+	</requiredWorkTags>
+    <forcedTraits>
+        <li>
+            <defName>NaturalMood</defName>
+            <degree>2</degree>
+        </li>
+        <li>
+            <defName>Kind</defName>
+            <chance>50</chance>
+        </li>
+    </forcedTraits>
+	</AlienRace.BackstoryDef>
+    
+<AlienRace.BackstoryDef>
+
+    <defName>ACSmugVillager</defName>
+    <title>Smug Villager</title>
+    <titleShort>Smug</titleShort>
+    <baseDescription>[PAWN_nameDef] is posh, proud, and interested in both fashion and interior design. [PAWN_pronoun] has gained an understanding of aesthetics, but [PAWN_possessive] braggadocious nature can be off-putting those [PAWN_pronoun] talks to.</baseDescription>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>5</amount>
+      </li>
+	  <li>
+        <defName>Artistic</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>-1</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ACSmugBackstory</li>
+    </spawnCategories>
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Artistic</li>
+	</requiredWorkTags>
+    <forcedTraits>
+        <li>
+            <defName>Bisexual</defName>
+            <chance>50</chance>
+        </li>
+    </forcedTraits>
+        <disallowedTraits>
+        <li>
+            <defName>NightOwl</defName>
+        </li>
+    </disallowedTraits>
+	</AlienRace.BackstoryDef>
+    
+<AlienRace.BackstoryDef>
+
+    <defName>ACSnootyVillager</defName>
+    <title>Snooty Villager</title>
+    <titleShort>Snooty</titleShort>
+    <baseDescription>[PAWN_nameDef] is very concerned with appearances, preferring to wear fine clothes and conduct [PAWN_objective]self in a mature manner. [PAWN_pronoun] has a well developed eye for aesthetics, but as a result will not tolerate a poorly decorated living space.</baseDescription>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Cooking</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Artistic</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+		<requiredWorkTags>
+			<li>Artistic</li>
+	</requiredWorkTags>
+    <spawnCategories>
+      <li>ACSnootyBackstory</li>
+    </spawnCategories>
+    <forcedTraits>
+        <li>
+            <defName>Greedy</defName>
+        </li>
+    </forcedTraits>
+        <disallowedTraits>
+        <li>
+            <defName>NightOwl</defName>
+        </li>
+    </disallowedTraits>
+	</AlienRace.BackstoryDef>
+    
+<AlienRace.BackstoryDef>
+
+    <defName>ACNormalVillager</defName>
+    <title>Normal Villager</title>
+    <titleShort>Normal</titleShort>
+    <baseDescription>[PAWN_nameDef] is friendly and generally accepting of those around [PAWN_objective], and finds pleasure in cooking and cleaning. [PAWN_pronoun] does not particularly care for appearances, being content with plain clothes and modest quarters. However, despite seeing the best in others, [PAWN_pronoun] can focus to much on [PAWN_possessive] own percieved failings.</baseDescription>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Cooking</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+		<requiredWorkTags>
+			<li>Social</li>
+	</requiredWorkTags>
+    <spawnCategories>
+      <li>ACNormalBackstory</li>
+    </spawnCategories>
+    <forcedTraits>
+        <li>
+            <defName>Ascetic</defName>
+            <chance>50</chance>
+        </li>
+        <li>
+            <defName>NaturalMood</defName>
+            <degree>-1</degree>
+        </li>
+        <li>
+            <defName>Kind</defName>
+            <chance>50</chance>
+        </li>
+    </forcedTraits>
+        <disallowedTraits>
+        <li>
+            <defName>NightOwl</defName>
+        </li>
+    </disallowedTraits>
+	</AlienRace.BackstoryDef>
+    
+<AlienRace.BackstoryDef>
+
+    <defName>ACSisterlyVillager</defName>
+    <title>Sisterly Villager</title>
+    <titleShort>Sisterly</titleShort>
+    <baseDescription>[PAWN_nameDef] is caring to everyone around [PAWN_objective]self, but also straightforwardly honest in a way that seems blunt or even insulting to others. [PAWN_pronoun] hates to see those around [PAWN_objective] in pain or distress, and takes it upon [PAWN_objective]self to treat any of their injuries [PAWN_pronoun] can.</baseDescription>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Medicine</defName>
+        <amount>6</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <requiredWorkTags>
+			<li>Caring</li>
+	</requiredWorkTags>
+    <spawnCategories>
+      <li>ACSisterlyBackstory</li>
+    </spawnCategories>
+    <forcedTraits>
+        <li>
+            <defName>Abrasive</defName>
+        </li>
+        <li>
+            <defName>NightOwl</defName>
+            <chance>50</chance>
+        </li>
+    </forcedTraits>
+	</AlienRace.BackstoryDef>
+    
+<AlienRace.BackstoryDef>
+
+    <defName>ACLazyVillager</defName>
+    <title>Lazy Villager</title>
+    <titleShort>Lazy</titleShort>
+    <baseDescription>[PAWN_nameDef] is easygoing and self-assured, preferring a laid-back lifestyle to one spent worrying or constantly busy. [PAWN_pronoun] also loves food, and beyond simply indulging in it whenever possible will find opportunities to discuss cuisine with those around [PAWN_objective].</baseDescription>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Cooking</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <requiredWorkTags>
+	</requiredWorkTags>
+    <spawnCategories>
+      <li>ACLazyBackstory</li>
+    </spawnCategories>
+    <forcedTraits>
+        <li>
+            <defName>Gourmand</defName>
+        </li>
+        <li>
+            <defName>Nerves</defName>
+            <degree>1</degree>
+            <chance>50</chance>
+        </li>
+        <li>
+            <defName>SpeedOffset</defName>
+            <degree>-1</degree>
+            <chance>25</chance>
+        </li>
+        <li>
+            <defName>Industriousness</defName>
+            <degree>-1</degree>
+            <chance>25</chance>
+        </li>
+    </forcedTraits>
+        <disallowedTraits>
+        <li>
+            <defName>NightOwl</defName>
+        </li>
+    </disallowedTraits>
+	</AlienRace.BackstoryDef>
+    
+<AlienRace.BackstoryDef>
+
+    <defName>ACCrankyVillager</defName>
+    <title>Cranky Villager</title>
+    <titleShort>Cranky</titleShort>
+    <baseDescription>[PAWN_nameDef] has become snobbish and rude in [PAWN_possessive] old age, but is kind to and protective of [PAWN_possessive] closest friends. Due to [PAWN_possessive] age [PAWN_pronoun] is out of touch with the present, and slow to accept change.</baseDescription>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-2</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <requiredWorkTags>
+	</requiredWorkTags>
+    <spawnCategories>
+      <li>ACCrankyBackstory</li>
+    </spawnCategories>
+    <forcedTraits>
+        <li>
+            <defName>Abrasive</defName>
+        </li>
+        <li>
+            <defName>Industriousness</defName>
+            <degree>1</degree>
+        </li>
+        <li>
+            <defName>GreatMemory</defName>
+            <chance>50</chance>
+        </li>
+        <li>
+            <defName>DrugDesire</defName>
+            <degree>-1</degree>
+            <chance>50</chance>
+        </li>
+    </forcedTraits>
+	</AlienRace.BackstoryDef>
+    
+    <!--=====Childhood======-->
+    
+<AlienRace.BackstoryDef>
+
+    <defName>ACBalloonPopper</defName>
+    <title>Balloon Popper</title>
+    <titleShort>Popper</titleShort>
+    <baseDescription>[PAWN_nameDef] spent [PAWN_possessive] childhood scanning the sky for present-bearing balloons to shoot down with [PAWN_possessive] slingshot.</baseDescription>
+
+    <slot>Childhood</slot>
+        <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-1</amount>
+      </li>
+    </skillGains>
+	
+		<requiredWorkTags>
+			<li>Social</li>
+	</requiredWorkTags>
+    <spawnCategories>
+      <li>ACJockBackstory</li>
+      <li>ACSmugBackstory</li>
+      <li>ACSnootyBackstory</li>
+      <li>ACPeppyBackstory</li>
+      <li>ACCrankyBackstory</li>
+      <li>ACLazyBackstory</li>
+      <li>ACNormalBackstory</li>
+      <li>ACSisterlyBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef>
+    
+<AlienRace.BackstoryDef>
+
+    <defName>ACFlowerGardener</defName>
+    <title>Flower Gardener</title>
+    <titleShort>Gardener</titleShort>
+    <baseDescription>[PAWN_nameDef] spent [PAWN_possessive] childhood planting, tending, and cross breeding ornamental flowers. [PAWN_pronoun] has developed a green thumb as a result.</baseDescription>
+
+    <slot>Childhood</slot>
+        <skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <requiredWorkTags>
+			<li>PlantWork</li>
+	</requiredWorkTags>
+    <spawnCategories>
+      <li>ACJockBackstory</li>
+      <li>ACSmugBackstory</li>
+      <li>ACSnootyBackstory</li>
+      <li>ACPeppyBackstory</li>
+      <li>ACCrankyBackstory</li>
+      <li>ACLazyBackstory</li>
+      <li>ACNormalBackstory</li>
+      <li>ACSisterlyBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef>
+    
+<AlienRace.BackstoryDef>
+
+    <defName>ACHomebody</defName>
+    <title>Homebody</title>
+    <titleShort>Homebody</titleShort>
+    <baseDescription>[PAWN_nameDef] spent [PAWN_possessive] childhood indoors, spending less time outdoors than [PAWN_possessive] peers. This led [PAWN_possessive] to spend time on hobbies and reading, but [PAWN_pronoun] never developed [PAWN_possessive] social skills.</baseDescription>
+
+    <slot>Childhood</slot>
+        <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <requiredWorkTags>
+			<li>Crafting</li>
+			<li>Intellectual</li>
+	</requiredWorkTags>
+    <spawnCategories>
+      <li>ACJockBackstory</li>
+      <li>ACSmugBackstory</li>
+      <li>ACSnootyBackstory</li>
+      <li>ACPeppyBackstory</li>
+      <li>ACCrankyBackstory</li>
+      <li>ACLazyBackstory</li>
+      <li>ACNormalBackstory</li>
+      <li>ACSisterlyBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef>
+    
+<AlienRace.BackstoryDef>
+
+    <defName>ACFossilDigger</defName>
+    <title>Fossil Digger</title>
+    <titleShort>Digger</titleShort>
+    <baseDescription>[PAWN_nameDef] spent [PAWN_possessive] childhood hunting for fossils with a shovel in hand. [PAWN_pronoun] spent plenty of time in the dirt, and just as much in the town museum.</baseDescription>
+
+    <slot>Childhood</slot>
+        <skillGains>
+      <li>
+        <defName>Mining</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Mining</li>
+	</requiredWorkTags>
+    <spawnCategories>
+      <li>ACJockBackstory</li>
+      <li>ACSmugBackstory</li>
+      <li>ACSnootyBackstory</li>
+      <li>ACPeppyBackstory</li>
+      <li>ACCrankyBackstory</li>
+      <li>ACLazyBackstory</li>
+      <li>ACNormalBackstory</li>
+      <li>ACSisterlyBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef>
+    
+<AlienRace.BackstoryDef>
+
+    <defName>ACCritterCatcher</defName>
+    <title>Critter Catcher</title>
+    <titleShort>Catcher</titleShort>
+    <baseDescription>[PAWN_nameDef] spent [PAWN_possessive] childhood catching bugs and fish, and taking good care of those [PAWN_pronoun] did. As [PAWN_pronoun] grew up, this evolved into skill with all animals.</baseDescription>
+
+    <slot>Childhood</slot>
+        <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <requiredWorkTags>
+			<li>Animals</li>
+	</requiredWorkTags>
+    <spawnCategories>
+      <li>ACJockBackstory</li>
+      <li>ACSmugBackstory</li>
+      <li>ACSnootyBackstory</li>
+      <li>ACPeppyBackstory</li>
+      <li>ACCrankyBackstory</li>
+      <li>ACLazyBackstory</li>
+      <li>ACNormalBackstory</li>
+      <li>ACSisterlyBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef>
+    
+<AlienRace.BackstoryDef>
+
+    <defName>ACSocialite</defName>
+    <title>Socialite</title>
+    <titleShort>Socialite</titleShort>
+    <baseDescription>[PAWN_nameDef] spent [PAWN_possessive] childhood chatting with [PAWN_possessive] neighbors and town visitors, and participated in every holiday celebration. [PAWN_pronoun] has felt at ease in conversation [PAWN_possessive] entire life.</baseDescription>
+
+    <slot>Childhood</slot>
+        <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <requiredWorkTags>
+			<li>Social</li>
+	</requiredWorkTags>
+    <spawnCategories>
+      <li>ACJockBackstory</li>
+      <li>ACSmugBackstory</li>
+      <li>ACSnootyBackstory</li>
+      <li>ACPeppyBackstory</li>
+      <li>ACCrankyBackstory</li>
+      <li>ACLazyBackstory</li>
+      <li>ACNormalBackstory</li>
+      <li>ACSisterlyBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef>
+    
+<AlienRace.BackstoryDef>
+
+    <defName>ACDIY-er</defName>
+    <title>DIY-er</title>
+    <titleShort>DIY-er</titleShort>
+    <baseDescription>[PAWN_nameDef] spent [PAWN_possessive] childhood obsessed with DIY, hunting down recipies and materials to make [PAWN_possessive] own furniture and tools. This pratice has given [PAWN_objective] the ability to work wood, stone, and metal, but made [PAWN_objective] a bit of a shut-in.</baseDescription>
+
+    <slot>Childhood</slot>
+        <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <requiredWorkTags>
+			<li>Social</li>
+			<li>Crafting</li>
+	</requiredWorkTags>
+    <spawnCategories>
+      <li>ACJockBackstory</li>
+      <li>ACSmugBackstory</li>
+      <li>ACSnootyBackstory</li>
+      <li>ACPeppyBackstory</li>
+      <li>ACCrankyBackstory</li>
+      <li>ACLazyBackstory</li>
+      <li>ACNormalBackstory</li>
+      <li>ACSisterlyBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef>
+    
+<AlienRace.BackstoryDef>
+
+    <defName>ACTreeShaker</defName>
+    <title>Tree Shaker</title>
+    <titleShort>Shaker</titleShort>
+    <baseDescription>[PAWN_nameDef] spent [PAWN_possessive] childhood shaking trees in search of furniture and fruit. This has made [PAWN_objective] good at home medicine after enraging many nests of bees and wasps.</baseDescription>
+
+    <slot>Childhood</slot>
+        <skillGains>
+      <li>
+        <defName>Medicine</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <requiredWorkTags>
+			<li>Caring</li>
+	</requiredWorkTags>
+    <spawnCategories>
+      <li>ACJockBackstory</li>
+      <li>ACSmugBackstory</li>
+      <li>ACSnootyBackstory</li>
+      <li>ACPeppyBackstory</li>
+      <li>ACCrankyBackstory</li>
+      <li>ACLazyBackstory</li>
+      <li>ACNormalBackstory</li>
+      <li>ACSisterlyBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef>
+	
+      
+</Defs>

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Added body parts -->
+
+  <HediffDef Name="AddedBodyPartBase" Abstract="True">
+    <hediffClass>Hediff_AddedPart</hediffClass>
+    <defaultLabelColor>(0.5, 0.5, 0.9)</defaultLabelColor>
+    <isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>WoodenVillagerBeak</defName>
+    <label>wooden villager beak</label>
+    <labelNoun>a wooden villager beak</labelNoun>
+    <description>An installed wooden beak for animal villagers.</description>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>beak</label>
+            <capacities>
+              <li>Bite</li>
+            </capacities>
+            <power>8.0</power> 
+            <cooldownTime>2</cooldownTime>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>0.80</partEfficiency>
+      <betterThanNatural>false</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>BionicVillagerBeak</defName>
+    <label>bionic villager beak</label>
+    <labelNoun>a bionic villager beak</labelNoun>
+    <description>An installed bionic beak for animal villagers.</description>
+    <spawnThingOnRemoved>BionicVillagerBeak</spawnThingOnRemoved>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>beak</label>
+            <capacities>
+              <li>Bite</li>
+            </capacities>
+            <power>12</power>
+            <cooldownTime>2</cooldownTime>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.20</partEfficiency>
+      <betterThanNatural>false</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>BionicVillagerTail</defName>
+    <label>bionic villager tail</label>
+    <labelNoun>a bionic villager tail</labelNoun>
+    <description>An installed bionic tail for an animal villager</description>
+    <spawnThingOnRemoved>BionicVillagerTail</spawnThingOnRemoved>
+	<comps>
+      <li Class="HediffCompProperties_VerbGiver">
+       <tools>
+          <li>
+            <label>bionic tail attack</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>10</power>
+            <cooldownTime>1.65</cooldownTime>
+          </li>
+        </tools> 
+      </li>
+    </comps>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.2</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>ClothVillagerTail</defName>
+    <label>cloth villager tail</label>
+    <labelNoun>a cloth villager tail</labelNoun>
+    <description>An installed cloth tail for an animal villager</description>
+    <addedPartProps>
+	 <betterThanNatural>false</betterThanNatural>
+      <solid>true</solid>
+      <partEfficiency>0.6</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  
+    <HediffDef ParentName="AddedBodyPartBase">
+    <defName>GoldVillagerHorn</defName>
+    <label>golden villager horn</label>
+    <labelNoun>a golden villager horn</labelNoun>
+    <description>An installed golden horn for an animal villager</description>
+    <spawnThingOnRemoved>GoldVillagerHorn</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>0.5</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <PawnBeauty>1</PawnBeauty>
+        </statOffsets>
+      </li>
+    </stages>
+    </HediffDef>
+
+</Defs>

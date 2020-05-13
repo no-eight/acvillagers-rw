@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?><Defs>
+
+<RulePackDef><defName>NamerPersonACScoot</defName><rulePack><rulesStrings><li>name->[Scoot]</li></rulesStrings><rulesRaw><li Class="Rule_File"><keyword>Scoot</keyword><path>ACNames/Scoot</path></li></rulesRaw></rulePack></RulePackDef>
+<RulePackDef><defName>NamerPersonACMarshal</defName><rulePack><rulesStrings><li>name->[Marshal]</li></rulesStrings><rulesRaw><li Class="Rule_File"><keyword>Marshal</keyword><path>ACNames/Marshal</path></li></rulesRaw></rulePack></RulePackDef>
+<RulePackDef><defName>NamerPersonACPeanut</defName><rulePack><rulesStrings><li>name->[Peanut]</li></rulesStrings><rulesRaw><li Class="Rule_File"><keyword>Peanut</keyword><path>ACNames/Peanut</path></li></rulesRaw></rulePack></RulePackDef>
+<RulePackDef><defName>NamerPersonACMint</defName><rulePack><rulesStrings><li>name->[Mint]</li></rulesStrings><rulesRaw><li Class="Rule_File"><keyword>Mint</keyword><path>ACNames/Mint</path></li></rulesRaw></rulePack></RulePackDef>
+<RulePackDef><defName>NamerPersonACDotty</defName><rulePack><rulesStrings><li>name->[Dotty]</li></rulesStrings><rulesRaw><li Class="Rule_File"><keyword>Dotty</keyword><path>ACNames/Dotty</path></li></rulesRaw></rulePack></RulePackDef>
+<RulePackDef><defName>NamerPersonACCole</defName><rulePack><rulesStrings><li>name->[Cole]</li></rulesStrings><rulesRaw><li Class="Rule_File"><keyword>Cole</keyword><path>ACNames/Cole</path></li></rulesRaw></rulePack></RulePackDef>
+<RulePackDef><defName>NamerPersonACCoco</defName><rulePack><rulesStrings><li>name->[Coco]</li></rulesStrings><rulesRaw><li Class="Rule_File"><keyword>Coco</keyword><path>ACNames/Coco</path></li></rulesRaw></rulePack></RulePackDef>
+</Defs>
