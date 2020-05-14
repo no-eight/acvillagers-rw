@@ -53,8 +53,7 @@
 			</li>
 			<li Class="ScenPart_StartingThing_Defined">
 				<def>StartingThing_Defined</def>
-				<thingDef>MeleeWeapon_Knife</thingDef>
-                <stuff>Steel</stuff>
+				<thingDef>MeleeWeapon_ACAxe</thingDef>
 				<count>2</count>
 			</li>
 			<li Class="ScenPart_ScatterThingsNearPlayerStart">

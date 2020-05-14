@@ -348,6 +348,37 @@
     </forcedTraits>
 	</AlienRace.BackstoryDef>
     
+<AlienRace.BackstoryDef>
+
+    <defName>ACRover</defName>
+    <title>Amiable Traveler</title>
+    <titleShort>Traveler</titleShort>
+    <baseDescription>[PAWN_nameDef] spends most of [PAWN_objective] time traveling, with a particular love or trains. [PAWN_pronoun] frequently chats with fellow passengers, giving [PAWN_objective] well developed social skills.</baseDescription>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <requiredWorkTags>
+	</requiredWorkTags>
+    <spawnCategories>
+      <li>ACRoverBackstory</li>
+    </spawnCategories>
+    <forcedTraits>
+        <li>
+            <defName>Industriousness</defName>
+            <degree>1</degree>
+        </li>
+    </forcedTraits>
+	</AlienRace.BackstoryDef>
+    
     <!--=====Childhood======-->
     
 <AlienRace.BackstoryDef>
@@ -373,6 +404,7 @@
 			<li>Social</li>
 	</requiredWorkTags>
     <spawnCategories>
+      <li>ACRoverBackstory</li>
       <li>ACJockBackstory</li>
       <li>ACSmugBackstory</li>
       <li>ACSnootyBackstory</li>
@@ -402,6 +434,7 @@
 			<li>PlantWork</li>
 	</requiredWorkTags>
     <spawnCategories>
+      <li>ACRoverBackstory</li>
       <li>ACJockBackstory</li>
       <li>ACSmugBackstory</li>
       <li>ACSnootyBackstory</li>
@@ -440,6 +473,7 @@
 			<li>Intellectual</li>
 	</requiredWorkTags>
     <spawnCategories>
+      <li>ACRoverBackstory</li>
       <li>ACJockBackstory</li>
       <li>ACSmugBackstory</li>
       <li>ACSnootyBackstory</li>
@@ -474,6 +508,7 @@
 			<li>Mining</li>
 	</requiredWorkTags>
     <spawnCategories>
+      <li>ACRoverBackstory</li>
       <li>ACJockBackstory</li>
       <li>ACSmugBackstory</li>
       <li>ACSnootyBackstory</li>
@@ -503,6 +538,7 @@
 			<li>Animals</li>
 	</requiredWorkTags>
     <spawnCategories>
+      <li>ACRoverBackstory</li>
       <li>ACJockBackstory</li>
       <li>ACSmugBackstory</li>
       <li>ACSnootyBackstory</li>
@@ -532,6 +568,7 @@
 			<li>Social</li>
 	</requiredWorkTags>
     <spawnCategories>
+      <li>ACRoverBackstory</li>
       <li>ACJockBackstory</li>
       <li>ACSmugBackstory</li>
       <li>ACSnootyBackstory</li>
@@ -570,6 +607,7 @@
 			<li>Crafting</li>
 	</requiredWorkTags>
     <spawnCategories>
+      <li>ACRoverBackstory</li>
       <li>ACJockBackstory</li>
       <li>ACSmugBackstory</li>
       <li>ACSnootyBackstory</li>
@@ -607,6 +645,7 @@
 			<li>Caring</li>
 	</requiredWorkTags>
     <spawnCategories>
+      <li>ACRoverBackstory</li>
       <li>ACJockBackstory</li>
       <li>ACSmugBackstory</li>
       <li>ACSnootyBackstory</li>

@@ -31,7 +31,7 @@
 				<drawnInBed>false</drawnInBed>
 				<offsets>
 					<south><bodyTypes><Thin>(-0.41, 0.1)</Thin></bodyTypes><crownTypes><Normal_Average>(0,0)</Normal_Average></crownTypes></south>
-					<north><bodyTypes><Thin>(0, 0.42)</Thin></bodyTypes><crownTypes><Normal_Average>(0,0)</Normal_Average></crownTypes></north>
+					<north><bodyTypes><Thin>(0.02, 0.42)</Thin></bodyTypes><crownTypes><Normal_Average>(0,0)</Normal_Average></crownTypes></north>
 					<east><bodyTypes><Thin>(-0.1, 0.05)</Thin></bodyTypes><crownTypes><Normal_Average>(0,0)</Normal_Average></crownTypes></east>
 				</offsets>
 			</li><li>
