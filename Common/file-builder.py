@@ -61,7 +61,7 @@ species_params_dict = {}
 def name_file_writer (villager_name):
     path = os.path.join(script_dir, string_name_folder)
     os.makedirs(path, exist_ok=True)
-    with open(os.path.join(path, villager_name + string_txt), 'w') as name_file:
+    with open(os.path.join(path, villager_name.replace(" ", "") + string_txt), 'w') as name_file:
         name_file.write(villager_name)
 
 def make_species_params_dict ():
@@ -84,12 +84,15 @@ with open('villagers.csv', newline='') as villager_list:
     villager_list_reader = csv.reader(villager_list, delimiter=',', quotechar='|')
     name_maker_file = file_start + '\n'
     for row in villager_list_reader:
-        for i in range(0, len(rule_pack_body)):
-            villager_name = row[0]
-            name_file_writer(villager_name)
-            name_maker_file += rule_pack_body[i]
-            if i < len(rule_pack_body) - 1:
-                name_maker_file += villager_name
+        villager_name = row[0]
+        name_file_writer(villager_name)
+        if villager_name == 'Kid Cat':
+            name_maker_file += '<RulePackDef><defName>NamerPersonAC' + villager_name.replace(" ", "") + '</defName><rulePack><rulesStrings><li>name->Kid \'Kid Cat\' Cat</li></rulesStrings><rulesRaw><li Class="Rule_File"><keyword>' + villager_name.replace(" ", "") + '</keyword><path>ACNames/' + villager_name.replace(" ", "") + '</path></li></rulesRaw></rulePack></RulePackDef>\n'
+        else:
+            for i in range(0, len(rule_pack_body)):
+                name_maker_file += rule_pack_body[i]
+                if i < len(rule_pack_body) - 1:
+                    name_maker_file += villager_name.replace(" ", "")
     name_maker_file += file_end
     path = os.path.join(script_dir, string_defs, string_namegen)
     os.makedirs(path, exist_ok=True)
@@ -112,7 +115,10 @@ with open('villagers.csv', newline='') as villager_list:
         for i in range (0,len(race_file_body)):
             race_file += race_file_body[i]
             if i in racedef_use_name:
-                race_file += villager_name
+                if i in [3,6]:
+                    race_file += villager_name
+                else:
+                    race_file += villager_name.replace(" ", "")
             elif i in racedef_use_species:
                 if i == 4:
                     race_file += villager_species_lower
@@ -219,7 +225,7 @@ with open('villagers.csv', newline='') as villager_list:
                         elif i == 1:
                             race_file += villager_species
                         elif i == 2:
-                            race_file += villager_name
+                            race_file += villager_name.replace(" ", "")
                         elif i == 4:
                             race_file += '-0.42'
                         elif i == 5:
@@ -254,7 +260,7 @@ with open('villagers.csv', newline='') as villager_list:
                 else:
                     race_file += 'her'
         race_file += file_end
-        with open(os.path.join(path, string_race_filename_front + villager_name + string_race_filename_end),
+        with open(os.path.join(path, string_race_filename_front + villager_name.replace(" ", "") + string_race_filename_end),
                   'w') as open_file:
             open_file.write(race_file)
 ### PawnKind File ###
@@ -270,7 +276,10 @@ with open('villagers.csv', newline='') as villager_list:
         for i in range (0,len(pawnkind_file_body)):
             race_file += pawnkind_file_body[i]
             if i in pawnkind_use_name:
-                race_file += villager_name
+                if i in [7,10,18]:
+                    race_file += villager_name
+                else:
+                    race_file += villager_name.replace(" ", "")
             elif i in [2, 13]:
                 race_file += villager_personality
             elif i in [3, 14]:
@@ -286,6 +295,6 @@ with open('villagers.csv', newline='') as villager_list:
                 else:
                     race_file += '45'
         race_file += file_end
-        with open(os.path.join(path, string_pawnkinds_filename_front + villager_name + string_pawnkinds_filename_end),
+        with open(os.path.join(path, string_pawnkinds_filename_front + villager_name.replace(" ", "") + string_pawnkinds_filename_end),
                   'w') as open_file:
             open_file.write(race_file)

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?><Defs>
+
+	<PawnKindDef Name="ACKidCatBasePlayer" Abstract="True"><race>Alien_ACKidCat</race><defaultFactionType>Player_AnimalVillager</defaultFactionType>
+		<backstoryFiltersOverride><li><categories><li>ACJockBackstory</li></categories></li></backstoryFiltersOverride>
+		<weaponMoney><min>150</min><max>450</max></weaponMoney>
+		<gearHealthRange><min>0.7</min><max>2.3</max></gearHealthRange>
+		<apparelTags><li>IndustrialBasic</li><li>IndustrialAdvanced</li></apparelTags>
+		<chemicalAddictionChance>0.15</chemicalAddictionChance>
+		<invNutrition>2.1</invNutrition><itemQuality>Normal</itemQuality>
+		<backstoryCryptosleepCommonality>0.02</backstoryCryptosleepCommonality>
+		<combatEnhancingDrugsChance>0.25</combatEnhancingDrugsChance><combatEnhancingDrugsCount><min>0</min><max>3</max></combatEnhancingDrugsCount>
+		<minGenerationAge>20</minGenerationAge><maxGenerationAge>45</maxGenerationAge>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ACKidCatBase"><defName>ACKidCatVillager</defName><label>Kid Cat</label>
+		<combatPower>35</combatPower><apparelAllowHeadgearChance>0</apparelAllowHeadgearChance><apparelTags><li>IndustrialBasic</li><li>IndustrialAdvanced</li></apparelTags><isFighter>false</isFighter>
+		<weaponTags><li>ACSlingshot</li></weaponTags><weaponMoney><min>0</min><max>0</max></weaponMoney><apparelMoney><min>200</min><max>650</max></apparelMoney><itemQuality>Normal</itemQuality><chemicalAddictionChance>0.05</chemicalAddictionChance><combatEnhancingDrugsChance>0</combatEnhancingDrugsChance><backstoryCryptosleepCommonality>0.1</backstoryCryptosleepCommonality>
+	</PawnKindDef>
+
+	<!---<PawnKindDef ParentName="ACKidCatBasePlayer"><defName>ACKidCatVillagerEmbark</defName><label>Kid Cat</label>
+		<combatPower>35</combatPower><weaponTags><li>ACSlingshot</li></weaponTags><weaponMoney><min>0</min><max>0</max></weaponMoney><apparelAllowHeadgearChance>0</apparelAllowHeadgearChance><apparelTags><li>IndustrialBasic</li><li>IndustrialAdvanced</li></apparelTags><isFighter>false</isFighter>
+		<apparelMoney><min>200</min><max>650</max></apparelMoney><itemQuality>Normal</itemQuality><chemicalAddictionChance>0.05</chemicalAddictionChance><combatEnhancingDrugsChance>0</combatEnhancingDrugsChance><backstoryCryptosleepCommonality>0.1</backstoryCryptosleepCommonality>
+	</PawnKindDef>-->
+
+	<PawnKindDef Name="ACKidCatBase" Abstract="True"><race>Alien_ACKidCat</race><defaultFactionType>AnimalColony</defaultFactionType>
+		<baseRecruitDifficulty>0.75</baseRecruitDifficulty>
+		<backstoryFiltersOverride><li><categories><li>ACJockBackstory</li></categories></li></backstoryFiltersOverride>
+		<weaponMoney><min>150</min><max>450</max></weaponMoney>
+		<gearHealthRange><min>0.7</min><max>2.3</max></gearHealthRange><apparelTags><li>IndustrialBasic</li><li>IndustrialAdvanced</li></apparelTags>
+		<chemicalAddictionChance>0.15</chemicalAddictionChance>
+		<invNutrition>2.1</invNutrition>
+		<itemQuality>Normal</itemQuality>
+		<backstoryCryptosleepCommonality>0.02</backstoryCryptosleepCommonality>
+		<minGenerationAge>20</minGenerationAge><maxGenerationAge>45</maxGenerationAge>
+		<combatEnhancingDrugsChance>0.25</combatEnhancingDrugsChance><combatEnhancingDrugsCount><min>0</min><max>3</max></combatEnhancingDrugsCount>
+	</PawnKindDef>
+
+	<!--<PawnKindDef ParentName="ACKidCatBase"><defName>ACKidCat_Ranger</defName><label>Kid Cat</label>
+		<combatPower>50</combatPower><gearHealthRange><min>1.0</min><max>3.2</max></gearHealthRange>
+		<apparelTags><li>IndustrialBasic</li><li>IndustrialAdvanced</li><li>BeltDefensePop</li></apparelTags>
+		<apparelMoney><min>1100</min><max>1600</max></apparelMoney><apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+		<weaponMoney><min>400</min><max>700</max></weaponMoney>
+		<weaponTags><li>ACSlingshot</li></weaponTags><combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance><combatEnhancingDrugsCount><min>0</min><max>3</max></combatEnhancingDrugsCount>
+		<inventoryOptions><skipChance>0.85</skipChance><subOptionsChooseOne><li><thingDef>Silver</thingDef><countRange><min>50</min><max>150</max></countRange></li><li><thingDef>MedicineIndustrial</thingDef><countRange><min>1</min><max>1</max></countRange></li></subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>--></Defs>
