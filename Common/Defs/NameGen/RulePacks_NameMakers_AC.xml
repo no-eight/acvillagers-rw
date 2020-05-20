@@ -17,4 +17,6 @@
 <RulePackDef><defName>NamerPersonACRover</defName><rulePack><rulesStrings><li>name->[Rover]</li></rulesStrings><rulesRaw><li Class="Rule_File"><keyword>Rover</keyword><path>ACNames/Rover</path></li></rulesRaw></rulePack></RulePackDef>
 <RulePackDef><defName>NamerPersonACKitty</defName><rulePack><rulesStrings><li>name->[Kitty]</li></rulesStrings><rulesRaw><li Class="Rule_File"><keyword>Kitty</keyword><path>ACNames/Kitty</path></li></rulesRaw></rulePack></RulePackDef>
 <RulePackDef><defName>NamerPersonACKidCat</defName><rulePack><rulesStrings><li>name->Kid 'Kid Cat' Cat</li></rulesStrings><rulesRaw><li Class="Rule_File"><keyword>KidCat</keyword><path>ACNames/KidCat</path></li></rulesRaw></rulePack></RulePackDef>
+<RulePackDef><defName>NamerPersonACDrake</defName><rulePack><rulesStrings><li>name->[Drake]</li></rulesStrings><rulesRaw><li Class="Rule_File"><keyword>Drake</keyword><path>ACNames/Drake</path></li></rulesRaw></rulePack></RulePackDef>
+<RulePackDef><defName>NamerPersonACMolly</defName><rulePack><rulesStrings><li>name->[Molly]</li></rulesStrings><rulesRaw><li Class="Rule_File"><keyword>Molly</keyword><path>ACNames/Molly</path></li></rulesRaw></rulePack></RulePackDef>
 </Defs>

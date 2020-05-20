@@ -1,5 +1,5 @@
 species,head_offset_x,head_offset_y,overhead_offset_y,body_type,draw_size,south_tail_offset_x,south_tail_offset_y,north_tail_offset_x,north_tail_offset_y,east_tail_offset_x,east_tail_offset_y,head_draw_size,leather_amount,armor_rating_blunt,armor_rating_sharp,label_fist,label_teeth,leather_def,base_body_size
-duck,-0.12,-0.23,0.67,Female,0.9,0,0,0,0.18,-0.2,-0.1,0.9,20,0.1,0.15,flap,beak,Leather_Bird,0.75
-squirrel,-0.12,-0.23,0.67,Thin,0.9,-0.41,0.1,0.02,0.42,-0.1,0.05,0.9,20,0.1,0.15,fist,teeth,Leather_Light,0.75
-rabbit,-0.1,-0.2,0.7,Thin,0.9,-0.41,0.1,0,0.34,-0.24,0.02,0.9,25,0.1,0.15,fist,teeth,Leather_Light,0.8
-cat,-0.1,-0.2,0.7,Thin,0.9,-0.41,0.1,0,0.34,-0.24,0.02,0.9,25,0.1,0.15,fist,teeth,Leather_Light,0.8
+duck,-0.16,-0.14,0.54,Female,0.9,0,0,0,0.18,-0.2,-0.1,0.9,20,0.1,0.15,flap,beak,Leather_Bird,0.75
+squirrel,-0.12,-0.09,0.67,Thin,0.9,-0.41,0.1,0.02,0.42,-0.1,0.05,0.9,20,0.1,0.15,fist,teeth,Leather_Light,0.75
+rabbit,-0.1,-0.01,0.7,Thin,0.9,-0.41,0.1,0,0.34,-0.24,0.02,0.9,25,0.1,0.15,fist,teeth,Leather_Light,0.8
+cat,-0.1,0.03,0.7,Thin,0.9,-0.41,0.1,0,0.34,-0.24,0.02,0.9,25,0.1,0.15,fist,teeth,Leather_Light,0.8

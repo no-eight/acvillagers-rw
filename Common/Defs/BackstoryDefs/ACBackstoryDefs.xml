@@ -181,12 +181,12 @@
         <amount>2</amount>
       </li>
 	  <li>
-        <defName>Social</defName>
+        <defName>Intellectual</defName>
         <amount>4</amount>
       </li>
     </skillGains>
 		<requiredWorkTags>
-			<li>Social</li>
+			<li>Intellectual</li>
 	</requiredWorkTags>
     <spawnCategories>
       <li>ACNormalBackstory</li>

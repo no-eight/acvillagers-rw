@@ -17,7 +17,7 @@
 		</forcedRaceTraitEntries>
 		<maxDamageForSocialfight>6.0</maxDamageForSocialfight>
 		<alienPartGenerator>
-			<headOffset>(-0.1, -0.2)</headOffset>
+			<headOffset>(-0.1, 0.03)</headOffset>
 			<aliencrowntypes><li>Average_Normal</li></aliencrowntypes>
 			<alienbodytypes><li>Thin</li></alienbodytypes>
 			<useGenderedHeads>false</useGenderedHeads>
@@ -25,7 +25,7 @@
 			<bodyAddons><li>
 				<drawSize>0.9</drawSize>
 				<path>CatVillagers/Ankha/Tail/Tail</path>
-				<bodyPart>tail</bodyPart>
+				<bodyPart>VillagerTail</bodyPart>
 				<inFrontOfBody>false</inFrontOfBody>
 				<useSkinColor>true</useSkinColor>
 				<drawnInBed>false</drawnInBed>
@@ -36,20 +36,9 @@
 				</offsets>
 			</li><li>
 				<drawSize>0.9</drawSize>
-				<path>CatVillagers/Ankha/Head/Overhead</path>
-				<inFrontOfBody>false</inFrontOfBody>
-				<useSkinColor>true</useSkinColor>
-				<drawnInBed>true</drawnInBed>
-				<offsets>
-					<south><bodyTypes><Thin>(0.0, 0.0)</Thin></bodyTypes><crownTypes><Normal_Average>(0,0)</Normal_Average></crownTypes></south>
-					<north><bodyTypes><Thin>(0.0, 0.7)</Thin></bodyTypes><crownTypes><Normal_Average>(0,0)</Normal_Average></crownTypes></north>
-					<east><bodyTypes><Thin>(0.0, 0.0)</Thin></bodyTypes><crownTypes><Normal_Average>(0,0)</Normal_Average></crownTypes></east>
-				</offsets>
-			</li><li>
-				<drawSize>0.9</drawSize>
 				<path>CatVillagers/Ankha/Head/Accessory</path>
 				<inFrontOfBody>true</inFrontOfBody>
-				<useSkinColor>true</useSkinColor>
+				<hiddenUnderApparelTag><li>HideThisShit</li></hiddenUnderApparelTag><hiddenUnderApparelFor><li>FullHead</li><li>UpperHead</li></hiddenUnderApparelFor><useSkinColor>true</useSkinColor>
 				<drawnInBed>true</drawnInBed>
 				<offsets>
 					<south><bodyTypes><Thin>(-0.42, 0.35)</Thin></bodyTypes><crownTypes><Normal_Average>(0,0)</Normal_Average></crownTypes></south>
@@ -76,8 +65,8 @@
 		<raceRestriction>
 			<apparelList></apparelList>
 			<whiteApparelList>
-				<li>Apparel_TribalA</li><li>Apparel_Parka</li><li>Apparel_Duster</li><li>Apparel_Jacket</li><li>Apparel_FlakJacket</li><li>Apparel_VestPlate</li><li>Apparel_PowerArmor</li>
-				<!--<li>Apparel_CowboyHat</li><li>Apparel_BowlerHat</li><li>Apparel_TribalHeaddress</li><li>Apparel_Tuque</li><li>Apparel_WarMask</li><li>Apparel_WarVeil</li><li>Apparel_SimpleHelmet</li><li>Apparel_AdvancedHelmet</li><li>Apparel_PowerArmorHelmet</li><li>Apparel_PsychicFoilHelmet</li>-->
+				<!--<li>Apparel_TribalA</li><li>Apparel_Parka</li><li>Apparel_Duster</li><li>Apparel_Jacket</li><li>Apparel_FlakJacket</li>--><li>Apparel_VestPlate</li><li>Apparel_PowerArmor</li>
+				<li>Apparel_VillagerDuster</li><li>Apparel_CowboyHat</li><li>Apparel_BowlerHat</li><li>Apparel_TribalHeaddress</li><li>Apparel_Tuque</li><!--<li>Apparel_WarMask</li><li>Apparel_WarVeil</li><li>Apparel_SimpleHelmet</li><li>Apparel_AdvancedHelmet</li><li>Apparel_PowerArmorHelmet</li><li>Apparel_PsychicFoilHelmet</li>-->
 				<li>Apparel_ShieldBelt</li><li>SmokepopBelt</li>
 				<!-- Glittertech Apparel --><li>Apparel_NanoSuit</li><li>Apparel_Reactive</li><li>Apparel_NanoSkin</li><li>Apparel_NanoSpeed</li><li>Apparel_OCCombatVest</li><li>Apparel_HC1Shield</li><li>Apparel_OCShield</li>
 				<!-- Rimatomics Apparel --><li>Apparel_RadiationSuit</li><li>Apparel_MoppSuitDesert</li><li>Apparel_MoppSuitWoodland</li><li>Apparel_MoppSuitSnow</li>
