@@ -220,7 +220,7 @@ with open('villagers.csv', newline='') as villager_list:
                         temp = '4.0'
                 race_file += temp
             elif i == 37:
-                if villager_name == 'Ankha' or villager_name == 'Raymond':
+                if villager_name == 'Ankha':
                     for i in range(0, len(race_file_accessory_addon)):
                         race_file += race_file_accessory_addon[i]
                         if i in [3,6,7,10,11,14]:
@@ -236,15 +236,11 @@ with open('villagers.csv', newline='') as villager_list:
                         elif i == 5:
                             if villager_name == 'Ankha':
                                 race_file += '0.35'
-                            elif villager_name == 'Raymond':
-                                race_file += '0.37'
                         elif i == 12:
                             race_file += '-0.4'
                         elif i == 13:
                             if villager_name == 'Ankha':
                                 race_file += '0.37'
-                            elif villager_name == 'Raymond':
-                                race_file += '0.36'
                         elif i < 15:
                             race_file += '0.0'
                 else:
